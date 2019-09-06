@@ -20,9 +20,9 @@ const CardComp = props => {
 
                 <h4>Womens Soccer Stars</h4>
 
-                <Card.Meta>Name{props.data.name}</Card.Meta>
-                <Card.Meta>Country{props.data.country}</Card.Meta>
-                <Card.Meta>Searches {props.data.searches}</Card.Meta>
+                <Card.Meta>{props.data.name}</Card.Meta>
+                <Card.Meta>{props.data.country}</Card.Meta>
+                <Card.Meta>{props.data.searches}</Card.Meta>
 
                 <CardData />
 

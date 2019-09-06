@@ -6,6 +6,8 @@ import axios from 'axios';
 
 import CardComp from './card';
 
+import Navbar from './Navbar';
+
 class App extends React.Component {
   constructor() {
     super()
@@ -20,7 +22,12 @@ class App extends React.Component {
   }
   render() {
 
-    return (<CardComp data={this.state.data} />)
+    return (
+      <div className="App">
+      <Navbar />
+    <CardComp data={this.state.data} />
+    </div>
+    )
 
   }
 }
